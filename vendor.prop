@@ -1,3 +1,10 @@
+# Camera
+persist.vendor.camera.gyro.disable=0
+persist.vendor.camera.fovc.enable=1
+vendor.camera.c2d.rotation=0
+persist.vendor.camera.fdvideo=1
+vendor.vidc.enc.disable.pq=true
+
 # Bluetooth
 bluetooth.device.default_name=Nokia 8 Sirocco
 
