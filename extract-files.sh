@@ -10,12 +10,14 @@ function blob_fixup() {
     case "${1}" in
 	# Patch Goodix fingerprint extensions to fix getBnConstructorMap
 	vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so)
+            "${PATCHELF_0_17_2}" --remove-needed "libhidltransport.so" "${2}"
             "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
 	;;
 	# Remove all unused dependencies from FP blobs
 	vendor/lib64/libgoodixhwfingerprint.so)
             "${PATCHELF_0_17_2}" --remove-needed "libsoftkeymasterdevice.so" "${2}"
 	    "${PATCHELF_0_17_2}" --remove-needed "libkeymaster_messages.so" "${2}"
+	;;
     esac
 }
 
