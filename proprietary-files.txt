@@ -335,17 +335,6 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
-# Fingerprint (Goodix - firmware)
-vendor/firmware/goodixfp.b00
-vendor/firmware/goodixfp.b01
-vendor/firmware/goodixfp.b02
-vendor/firmware/goodixfp.b03
-vendor/firmware/goodixfp.b04
-vendor/firmware/goodixfp.b05
-vendor/firmware/goodixfp.b06
-vendor/firmware/goodixfp.b07
-vendor/firmware/goodixfp.mdt
-
 # Fingerprint
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libgf_ca.so
