@@ -26,12 +26,16 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/lib/libmmcamera_faceproc.so', 'vendor/lib/libmmcamera_faceproc2.so'): blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
-	    .remove_needed('libhidltransport.so')
+	.remove_needed('libhidltransport.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
-	    .remove_needed('libsoftkeymasterdevice.so')
-	    .remove_needed('libkeymaster_messages.so'),
+	.remove_needed('libsoftkeymasterdevice.so')
+	.remove_needed('libkeymaster_messages.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
