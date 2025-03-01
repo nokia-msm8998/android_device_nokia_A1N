@@ -38,7 +38,7 @@ vendor/etc/audio/silence_48k.wav
 
 # Audio
 system/etc/permissions/audiosphere.xml:system_ext/etc/permissions/audiosphere.xml
--system/framework/audiosphere.jar:system_ext/framework/audiosphere.jar
+system/framework/audiosphere.jar:system_ext/framework/audiosphere.jar
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -359,9 +359,9 @@ vendor/firmware/a540_zap.elf
 vendor/firmware/a540_zap.mdt
 
 # Hotword Enrollment
--product/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk
--product/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk
--product/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk
+product/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk
+product/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk
+product/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:system_ext/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk
 
 # IFAA
 vendor/bin/hw/vendor.fih.hardware.ifaa@1.0-service
@@ -428,7 +428,7 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
 # Soter
--product/framework/vendor.qti.hardware.soter-V1.0-java.jar:system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
+product/framework/vendor.qti.hardware.soter-V1.0-java.jar:system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
 product/lib/vendor.qti.hardware.soter@1.0.so:system_ext/lib/vendor.qti.hardware.soter@1.0.so
 product/lib64/vendor.qti.hardware.soter@1.0.so:system_ext/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
