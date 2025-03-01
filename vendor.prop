@@ -8,5 +8,8 @@ vendor.vidc.enc.disable.pq=true
 # Bluetooth
 bluetooth.device.default_name=Nokia 8 Sirocco
 
+# Fingerprint
+persist.vendor.fingerprint.type=rear
+
 # SOC properties
 ro.soc.model=MSM8998
