@@ -1,8 +1,0 @@
-service vendor.tfa-calib /vendor/bin/tfa-calib
-    class late_start
-    user system
-    group system
-    oneshot
-
-on property:sys.boot_completed=1
-    start vendor.tfa-calib
