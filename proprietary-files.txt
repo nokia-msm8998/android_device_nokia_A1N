@@ -90,10 +90,8 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/libvideoutils.so
 vendor/lib64/libseemore.so
 vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libvideoutils.so
 
 # Camera (actuators)
 vendor/lib/libactuator_ak7345.so
