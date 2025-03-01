@@ -30,8 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor:32 \
-    libcamera_metadata.vendor
+    libgui_vendor:32
 
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
@@ -39,12 +38,6 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 # Hotword Enrollment
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-hotword.xml
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
