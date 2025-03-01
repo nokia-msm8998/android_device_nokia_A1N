@@ -29,6 +29,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-hmd-rev2
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=Avenger_00WW \
+    DeviceName=A1N \
     BuildDesc="A1N_00WW_FIH-user 10 QKQ1.190828.002 00WW_5_14L release-keys" \
     BuildFingerprint=Nokia/Avenger_00WW/A1N_sprout:10/QKQ1.190828.002/00WW_5_14L:user/release-keys
