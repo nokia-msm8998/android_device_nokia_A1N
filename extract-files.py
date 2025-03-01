@@ -1,0 +1,48 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+import extract_utils.tools
+extract_utils.tools.DEFAULT_PATCHELF_VERSION = '0_9'
+
+namespace_imports = [
+    'device/nokia/A1N',
+    'hardware/qcom-caf/msm8998',
+    'vendor/nokia/msm8998-common',
+]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
+	    .remove_needed('libhidltransport.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
+    'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
+	    .remove_needed('libsoftkeymasterdevice.so')
+	    .remove_needed('libkeymaster_messages.so'),
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'A1N',
+    'nokia',
+    blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device_with_common(
+        module, 'msm8998-common', module.vendor
+    )
+    utils.run()
