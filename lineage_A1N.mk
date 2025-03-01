@@ -29,8 +29,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-hmd-rev2
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=Avenger_00WW \
-    PRIVATE_BUILD_DESC="A1N_00WW_FIH-user 10 QKQ1.190828.002 00WW_5_14L release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Nokia/Avenger_00WW/A1N_sprout:10/QKQ1.190828.002/00WW_5_14L:user/release-keys
+    DeviceName=Avenger_00WW \
+    BuildDesc="A1N_00WW_FIH-user 10 QKQ1.190828.002 00WW_5_14L release-keys" \
+    BuildFingerprint=Nokia/Avenger_00WW/A1N_sprout:10/QKQ1.190828.002/00WW_5_14L:user/release-keys
