@@ -34,11 +34,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
-	.remove_needed('libhidltransport.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
-    'vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so': blob_fixup()
-	.remove_needed('libsoftkeymasterdevice.so')
-	.remove_needed('libkeymaster_messages.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
