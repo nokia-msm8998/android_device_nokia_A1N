@@ -43,11 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.nokia-se
 
-# NFC
-PRODUCT_PACKAGES += \
-    NfcNci \
-    SecureElement
-
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(DEVICE_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
