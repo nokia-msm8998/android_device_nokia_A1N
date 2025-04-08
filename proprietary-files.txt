@@ -6,7 +6,6 @@
 
 # ADSP
 vendor/lib/libfastcvadsp_stub.so
-vendor/lib64/libfastcvadsp_stub.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -40,8 +39,6 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/audio/silence_48k.wav
 
 # Audio
-system/etc/permissions/audiosphere.xml:system_ext/etc/permissions/audiosphere.xml
-system/framework/audiosphere.jar:system_ext/framework/audiosphere.jar
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -55,16 +52,6 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libqtigef.so
 
 # Audio (firmware)
 vendor/firmware/tfa98xx.cnt
@@ -93,8 +80,6 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib64/libseemore.so
-vendor/lib64/libsns_low_lat_stream_stub.so
 
 # Camera (actuators)
 vendor/lib/libactuator_ak7345.so
@@ -392,11 +377,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.msm8998.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
 
 # Panel calibration
 vendor/bin/qdcm_calib_data_LGD_cmd_mode_dsc_dsi_panel.xml
